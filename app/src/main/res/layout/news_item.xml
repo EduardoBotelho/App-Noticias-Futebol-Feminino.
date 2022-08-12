@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/news_image_height"
             android:contentDescription="@string/news_image"
-            android:src="@color/purple_500"
+            android:src="@color/teal_200"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -76,12 +76,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="56dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:contentDescription="@string/favorito"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
             app:layout_constraintVertical_bias="0.375"
             app:srcCompat="@drawable/ic_favorite" />
+        <!--Referência : incluir o efeito de Ripple(https://stackoverflow.com/a/61012286/3872578)-->
 
         <ImageView
             android:id="@+id/ivShare"
@@ -89,7 +94,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/default_margin"
             android:layout_marginEnd="@dimen/default_margin"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:contentDescription="@string/share"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
